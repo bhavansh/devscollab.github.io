@@ -14,7 +14,7 @@
       content="members, devscollab, devs, collab, portfolio, developers, android, web, digital, opensource, organization"
     />
     <title>Members</title>
-    <link rel="stylesheet" href="../css/members.css" />
+    <link rel="stylesheet" href="../css/license.css" />
 
     <!-- Favicon Link -->
     <link
@@ -40,31 +40,39 @@
   <body>
     <div class="page">
       <div class="container main-container">
-        <center><h4 data-tilt>DevsCollab OpenSource Members</h4></center>
+        <center><h4 data-tilt>MIT License</h4></center>
 
-        <div id="app" class="members">
-          <div v-for="(i,id) in list" :key="id">
-            <a
-              class="card"
-              id="member-cards"
-              :href="i.html_url"
-              target="_blank"
-            >
-              <img
-                class="ui medium circular image"
-                :src="i.avatar_url"
-                style="height: 150px; width: 150px; margin-bottom: 10px"
-              />
-              <span class="member-card-title">{{i.login}}</span>
-            </a>
-          </div>
+        <div class="license">
+          <p>
+            Permission is hereby granted, free of charge, to any person
+            obtaining a copy of this software and associated documentation files
+            (the "Software"), to deal in the Software without restriction,
+            including without limitation the rights to use, copy, modify, merge,
+            publish, distribute, sublicense, and/or sell copies of the Software,
+            and to permit persons to whom the Software is furnished to do so,
+            subject to the following conditions:
+            <br />
+            <br />
+            The above copyright notice and this permission notice shall be
+            included in all copies or substantial portions of the Software.
+            <br />
+            <br />
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+            EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+            MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+            NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+            BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+            ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+            CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+            SOFTWARE.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="footer">
       <div class="copyright">
-        <a href="./license.html"> &copy; 2020 DevsCollab </a>
+        <a href="pages/license.html"> &copy; 2020 DevsCollab </a>
       </div>
       <div class="footer-links">
         <a
@@ -79,7 +87,7 @@
         >
           Code of Conduct
         </a>
-        <a href="../index.html" target="_blank"> Home </a>
+        <a href="../index.html"> Home </a>
       </div>
     </div>
 

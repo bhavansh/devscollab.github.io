@@ -1,0 +1,95 @@
+/* 
+    Importing fonts from https://fonts.google.com
+    Use the following line to implement the font :
+    
+    font-family: 'Righteous', sans-serif;
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+* {
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Righteous', sans-serif;
+  color: rgba(26, 17, 19, 1);
+}
+
+.page {
+  height: 90vh;
+  overflow: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.license {
+  display: flex;
+  text-align: center;
+}
+
+.license p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.card-footer {
+  line-height: 2;
+  font-size: 1.1em;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  background-color: #d2e063;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.1em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-links > a,
+.footer > div > a {
+  margin: 10px;
+  color: inherit;
+}
+
+/* Media Query for Responsive Website on Mobile */
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2em !important;
+  }
+
+  .card-footer {
+    width: auto;
+  }
+
+  .license {
+    justify-content: center;
+  }
+
+  .license p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.7em;
+  }
+}

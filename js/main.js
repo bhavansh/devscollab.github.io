@@ -50,7 +50,7 @@ var vm = new Vue({
       .then(data => {
         this.list = data
 
-        // console.log(data[0])
+        //console.log(data[0])
       });
   }
 })

@@ -119,7 +119,20 @@
             <div v-for=" (i,id) in list" :key="id">
               <!-- <h5 align="center">{{i.name}}</h5> -->
               <div class="card">
-                <div class="project-image"></div>
+                <div class="project-image">
+                  {{ i.name }}
+                </div>
+                <div class="project-data">
+                  <div class="project-data__item">
+                    Forks: {{ i.forks }}
+                  </div>
+                  <div class="project-data__item">
+                    Open Issues: {{ i.open_issues }}
+                  </div>
+                  <div class="project-data__item">
+                    Watchers: {{ i.watchers }}
+                  </div>
+                </div>
                 <a class="project-info" :href="i.html_url">
                   {{i.description}}
                 </a>

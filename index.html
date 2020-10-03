@@ -119,13 +119,9 @@
             <div v-for=" (i,id) in list" :key="id">
               <!-- <h5 align="center">{{i.name}}</h5> -->
               <div class="card">
-                <div class="project-image">
-                  {{ i.name }}
-                </div>
+                <div class="project-image">{{ i.name }}</div>
                 <div class="project-data">
-                  <div class="project-data__item">
-                    Forks: {{ i.forks }}
-                  </div>
+                  <div class="project-data__item">Forks: {{ i.forks }}</div>
                   <div class="project-data__item">
                     Open Issues: {{ i.open_issues }}
                   </div>
@@ -213,7 +209,7 @@
         >
           Code of Conduct
         </a>
-        <a href="pages/members.html" target="_blank"> Members </a>
+        <a href="pages/members.html"> Members </a>
       </div>
     </div>
 

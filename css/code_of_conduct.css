@@ -1,0 +1,108 @@
+/*
+    Importing fonts from https://fonts.google.com
+    Use the following line to implement the font :
+
+    font-family: 'Righteous', sans-serif;
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+* {
+    user-select: none;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+.page {
+    height: 90vh;
+    overflow: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.code-of-conduct-content {
+    text-align: justify;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.code-of-conduct-title {
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 3.9em;
+    text-align: left;
+    font-weight: bolder;
+    color: #25384f;
+    margin-left: 50px
+}
+
+.code-of-conduct-content p {
+    font-size: 1.5em;
+    text-align: justify
+}
+
+.code-of-conduct-content ul li{
+    display:list-item;
+    list-style-position: inside;
+    list-style-type: disc !important;
+    font-size: 1.5em;
+    text-indent: -1em;
+    padding-left: 2em;
+
+}
+
+.code-of-conduct-content h4 {
+    font-family: 'Righteous',
+        sans-serif;
+    color: #25384f
+}
+
+.footer {
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    background-color: #d2e063;
+    color: #25384f;
+    font-weight: bolder;
+    font-size: 1.1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-links>a,
+.footer>div>a {
+    margin: 10px;
+    color: inherit;
+}
+
+.footer-links>a>i {
+    transform: scale(1.5);
+}
+
+/* Media Query for Responsive Website on Mobile */
+@media only screen and (max-width: 1000px) {
+  h3, h4 {
+    font-size: 2em !important;
+  }
+  .code-of-conduct-content p {
+    font-size: 1rem;
+  }
+
+  .code-of-conduct-content ul li {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.7em;
+  }

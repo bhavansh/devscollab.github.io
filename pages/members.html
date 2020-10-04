@@ -14,7 +14,6 @@
       content="members, devscollab, devs, collab, portfolio, developers, android, web, digital, opensource, organization"
     />
     <title>Members</title>
-    <link rel="stylesheet" href="../css/members.css" />
 
     <!-- Favicon Link -->
     <link
@@ -35,30 +34,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/image.min.css"
     />
+    <!-- Fontawesome Css -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+
+    <link rel="stylesheet" href="../css/members.css" />
   </head>
 
   <body>
     <div class="page">
       <div class="container main-container">
-        <center><h4 data-tilt>DevsCollab OpenSource Members</h4></center>
+        <center>
+          <h4 data-tilt>DevsCollab OpenSource Members</h4>
+        </center>
 
-        <div id="app" class="members">
-          <div v-for="(i,id) in list" :key="id">
-            <a
-              class="card"
-              id="member-cards"
-              :href="i.html_url"
-              target="_blank"
-            >
-              <img
-                class="ui medium circular image"
-                :src="i.avatar_url"
-                style="height: 150px; width: 150px; margin-bottom: 10px"
-              />
-              <span class="member-card-title">{{i.login}}</span>
-            </a>
-          </div>
-        </div>
+        <div id="app" class="members"></div>
       </div>
     </div>
 
@@ -83,7 +75,6 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script src="../js/titlt.js"></script>
     <script src="../js/members.js"></script>
   </body>

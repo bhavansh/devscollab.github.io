@@ -25,6 +25,7 @@ h1 {
   overflow: auto;
 }
 
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -32,13 +33,15 @@ h1 {
   align-items: center;
 }
 
+/* Member Profiles */
 .members {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
-#member-cards {
+/* .member-cards {
   height: 300px;
   width: 250px;
   padding: 2.5vh 10px;
@@ -48,9 +51,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-}
+} */
 
-.member-cards-title {
+/* .member-cards-title {
   text-align: center;
 }
 
@@ -59,7 +62,230 @@ h1 {
   font-size: 1.1em;
   text-align: justify;
   letter-spacing: 0.5px;
+} */
+
+/* .card{
+  margin: 2rem auto;
+  background: #231e39;
+  color: #b3b8cd;
+  border-radius: 5px;
+  width: 380px;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.profile-name{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 27px 0 0 120px;
+}
+.about{
+  margin-top: 35px;
+  line-height: 21px;
+}
+button{
+  margin: 10px 0 40px 0;
+}
+.msg-btn, .follow-btn{
+  background: #03bfbc;
+  border: 1px solid #03bfbc;
+  padding: 10px 25px;
+  color: #231e39;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+}
+.follow-btn{
+  margin-left: 10px;
+  background: transparent;
+  color: #02899c;
+}
+
+.card i{
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+.card i:hover{
+  color: #03bfbc;
+}  */
+
+
+.card:hover {
+  /* border: 1px solid #00838d;
+  box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+  z-index: 500; */
+
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  transform: scale(1.05);
+  border: 3px solid #000000;
+  background-color: #1e1f1e;
+}
+
+.card:hover,
+.info:hover,
+.bio:hover {
+  color: #00838d;
+}
+
+#app {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+
+  margin: 2rem auto;
+  width: 380px;
+  min-height: 450px;
+  max-height: 550px;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .75);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: #231e39; */
+  background-color: #212423f1;
+  border-radius: 10px;
+  color: #b3b8cd;
+
+
+}
+
+.card .pro {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+}
+
+.card .cover-photo {
+  background: url("../images/DevsCollab\ Banner1.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 160px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card .profile {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 93px 0 0 -175px;
+  border: 1px solid #1f1a32;
+  padding: 7px;
+  background: #292343;
+}
+
+.card .profile-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 27px 0 0 120px;
+}
+
+/* .card .round {
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+} */
+
+.card p {
+  flex-grow: 1;
+  padding: 6px;
+}
+
+.card .info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2.5rem 0;
+}
+
+.card .info span {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-bottom: 15px;
+}
+
+.primary {
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+  margin: 20px
+}
+
+.primary.ghost {
+  background-color: transparent;
+  color: #02899c;
+}
+
+.primary:hover {
+  color: #231e39;
+  background: #03bfbc;
+  transition: .5s;
+}
+
+
+/* ____________________________________________________________________________________________________________ */
+/* Can be added in future for languages if good api found */
+
+/* .skills {
+  background-color: #1f1a36;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.skills ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+} */
+
+/* ____________________________________________________________________________________________________________ */
+
+/* Footer */
 
 .footer {
   height: 10vh;
@@ -77,11 +303,12 @@ h1 {
   justify-content: space-between;
 }
 
-.footer-links > a,
-.footer > div > a {
+.footer-links>a,
+.footer>div>a {
   margin: 10px;
   color: inherit;
 }
+
 
 /* Media Query for Responsive Website on Mobile */
 @media only screen and (max-width: 1000px) {
@@ -99,5 +326,26 @@ h1 {
 
   .footer {
     font-size: 0.65em;
+  }
+}
+
+
+/*  Materialize Override */
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 87%;
   }
 }

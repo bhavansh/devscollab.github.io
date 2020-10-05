@@ -207,6 +207,7 @@ body {
 
 
 .join-us {
+    overflow: auto;
     background: #d2e063;
     height: auto;
     min-height: 100%;
@@ -223,7 +224,7 @@ body {
 }
 
 .text {
-    transform: translateY(150px)
+    transform: translateY(100px);
 }
 
 .join-us h2 {
@@ -258,7 +259,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background: #25384f;
-    transform: translateY(150px)
+    transform: translateY(100px);
 }
 
 

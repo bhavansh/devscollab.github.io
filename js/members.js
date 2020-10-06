@@ -66,7 +66,7 @@ async function getProfileObj() {
     profile.classList.add("card");
     profile.innerHTML = `
 
-    <div class="cover-photo">
+    <div class="cover-photo" >
     <span class="pro">PRO</span>
     <img src="${user.avatar_url}" class="profile">
     </div>
@@ -81,7 +81,7 @@ async function getProfileObj() {
     </div>
 
     <div class="buttons">
-      <a class="primary ghost" href="${member.html_url}" target="_blank"> FOLLOW </a>
+      <a class="primary ghost" href="${member.html_url}" target="_blank"> GITHUB </a>
       ${website}
     </div>
 

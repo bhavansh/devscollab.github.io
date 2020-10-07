@@ -5,7 +5,15 @@
     font-family: 'Righteous', sans-serif;
 
 */
+
 @import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+
+:root {
+  --main-btn-color: #107a8b;
+  --main-bg-color: #2cb978;
+  --main-color: #3b5441;
+  --main-light-color: #83e85a;
+}
 
 * {
   user-select: none;
@@ -32,34 +40,166 @@ h1 {
   align-items: center;
 }
 
+/* Member Profiles */
 .members {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#member-cards {
-  height: 300px;
-  width: 250px;
-  padding: 2.5vh 10px;
-  margin: 20px 20px;
+.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  transform: scale(1.05);
+  border: 1px solid #000000;
+  /* background-color: #1e1f1e; */
+}
+
+.card:hover,
+.info:hover,
+.bio:hover {
+  color: #000000;
+  font-size: 1.05rem;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  margin: 2rem auto;
+  width: 380px;
+  min-height: 470px;
+  max-height: 550px;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
+
+  /* background-color: #231e39; */
+  background-color: #d6d6d6f1;
+  border-radius: 10px;
+  color: #5e5e5e;
 }
 
-.member-cards-title {
-  text-align: center;
+.card .pro {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
-.card-footer {
-  line-height: 2;
-  font-size: 1.1em;
-  text-align: justify;
-  letter-spacing: 0.5px;
+.card .cover-photo {
+  background: url("../images/DevsCollab\ Banner1.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 160px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
 }
+
+.card .profile {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 93px 0 0 -175px;
+  border: 1px solid #1f1a32;
+  padding: 7px;
+  background: #494949;
+}
+
+.card .profile-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 27px 0 0 120px;
+}
+
+.card p {
+  flex-grow: 1;
+  padding: 6px;
+}
+
+.card .info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2.5rem 0;
+}
+
+.card .info span {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-bottom: 15px;
+}
+
+.primary {
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+  margin: 20px;
+}
+
+.primary.ghost {
+  background-color: transparent;
+  color: #000000;
+}
+
+.primary:hover {
+  color: #ffffff;
+  background: #000000;
+  transition: 0.5s;
+}
+
+/* ____________________________________________________________________________________________________________ */
+/* Can be added in future for languages if good api found */
+
+/* .skills {
+  background-color: #1f1a36;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.skills ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+} */
+
+/* ____________________________________________________________________________________________________________ */
+
+/* Footer */
 
 .footer {
   height: 10vh;
@@ -99,5 +239,25 @@ h1 {
 
   .footer {
     font-size: 0.65em;
+  }
+}
+
+/*  Materialize Override */
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 87%;
   }
 }

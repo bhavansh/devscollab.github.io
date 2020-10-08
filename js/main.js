@@ -11,6 +11,11 @@ const newLink = link => {
   }
 };
 
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+});
+
+
 // Scroll Down and Scroll Up events
 
 // let lastScrollTop = 0;

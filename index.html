@@ -28,7 +28,6 @@
       content="devscollab, devs, collab, portfolio, developers, android, web, digital, opensource"
     />
     <title>Devs Collab</title>
-    <link rel="stylesheet" href="css/main.css" />
 
     <!-- Favicon Link -->
     <link
@@ -52,11 +51,42 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
+    <!-- Navbar -->
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#">
+          <img src="images\logo00-transparent.svg" alt="" />
+        </a>
+
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#join-us">Join Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a class="sidenav-close" href="#home">Home</a></li>
+      <li><a class="sidenav-close" href="#about-us">About Us</a></li>
+      <li><a class="sidenav-close" href="#projects">Projects</a></li>
+      <li><a class="sidenav-close" href="#join-us">Join Us</a></li>
+    </ul>
+    <!-- Navbar -->
+
     <div class="page">
-      <div class="landing">
+      <div class="landing" id="home">
         <div class="spacer"></div>
         <div class="main-heading rellax" data-rellax-speed="5">
           DevsCollab OpenSource
@@ -66,7 +96,7 @@
         </div>
       </div>
 
-      <div class="about-us">
+      <div class="about-us" id="about-us">
         <div class="content">
           <div class="about-us-title">GET TO KNOW US</div>
           <div class="about-us-content">
@@ -112,7 +142,7 @@
         <div class="spacer"></div>
       </div>
 
-      <div class="projects-page">
+      <div class="projects-page" id="projects">
         <div class="projects-title">Projects Overview</div>
         <div id="app">
           <div class="projects">
@@ -138,7 +168,7 @@
         </div>
       </div>
 
-      <div class="join-us">
+      <div class="join-us" id="join-us">
         <div class="join-us-content">
           <div class="text">
             <h2>Join Us</h2>
@@ -186,7 +216,7 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="copyright">
         <a href="pages/license.html"> &copy; 2020 DevsCollab </a>
       </div>
@@ -203,10 +233,7 @@
         <a href="https://instagram.com/devscollab" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
-        <a
-          href="pages/code_of_conduct.html"
-          target="_blank"
-        >
+        <a href="pages/code_of_conduct.html" target="_blank">
           Code of Conduct
         </a>
         <a href="pages/members.html"> Members </a>
@@ -226,6 +253,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.9.1/rellax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <script src="js/main.js"></script>
   </body>
 </html>

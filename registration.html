@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <div class="container">
+        <h1>Register</h1>
+        <p>Fill in this form to create an account.</p>
+        <hr />
 
-<form action="/action_page.php">
-  <div class="container">
-    <h1>Register</h1>
-    <p>Fill in this form to create an account.</p>
-    <hr>
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Your Email"
+          name="email"
+          id="email"
+          required
+        />
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Your Email" name="email" id="email" required>
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Strong Password"
+          name="psw"
+          id="psw"
+          required
+        />
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Strong Password" name="psw" id="psw" required>
+        <hr />
 
-    <hr>
-
-    <button type="submit" class="registerbtn">Register</button>
-  </div>
-
-</form>
-
-</body>
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+    </form>
+  </body>
 </html>
